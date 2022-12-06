@@ -53,7 +53,7 @@ def clean_data(show_genres, show_publications, sort_method):
 
 new_data = clean_data(show_genres, show_publications, sort_method)
 
-for position in range(len(new_data)):
+for position in range(min(50, len(new_data))):
     artist = new_data['Artist'][position]
     album = new_data['Album'][position]
     genre = new_data['Genre'][position]
